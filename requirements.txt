@@ -1,0 +1,1 @@
+pythainlp>4.0
