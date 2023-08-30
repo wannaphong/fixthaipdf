@@ -1,7 +1,9 @@
 # FixThaiPDF
-Fix Thai PDF
+Fix Thai PDF Text
 
 > ซ่อมข้อความจาก PDF ภาษาไทย
+
+[![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wannaphong/fixthaipdf/blob/main/notebooks/test.ipynb)
 
 ## Install
 
