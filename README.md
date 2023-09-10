@@ -17,6 +17,12 @@ from fixthaipdf import clean
 clean("ข้้อความ")
 ```
 
+## Tips
+
+### How to improve the dict?
+
+You can add more words in [fixthaipdf/dict.py](https://github.com/wannaphong/fixthaipdf/blob/main/fixthaipdf/dict.py).
+
 
 ## License
 
