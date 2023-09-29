@@ -24,7 +24,7 @@ with open("requirements.txt","r",encoding="utf-8-sig") as f:
 
 setup(
     name="FixThaiPDF",
-    version="0.1",
+    version="0.2",
     description="Fix Thai PDF Text",
     long_description=readme,
     long_description_content_type="text/markdown",
