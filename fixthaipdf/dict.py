@@ -15,6 +15,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 replace_list=[
+    ("ล ้า","ลํ้า"),
+    ("ต ่า","ตํ่า"),
+    ("ค ่า","คํ่า"),
+    ("ค ้า","คํ้า"),
+    ("ห รือ","หรือ"),
+    ("ต ร์","ตร์"),
+    ("น ้า","นํ้า"),
     (" า","ำ"),  # ำ
     ("แด ง","แดง"),
     ("ไ ด้","ได้"),
