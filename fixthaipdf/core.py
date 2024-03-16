@@ -18,6 +18,7 @@ from pythainlp.util import normalize
 from pythainlp import thai_lead_vowels,thai_digits,thai_below_vowels,thai_above_vowels,thai_follow_vowels,thai_characters,thai_tonemarks,thai_consonants
 from pythainlp.corpus import thai_words
 from pythainlp.tokenize import Tokenizer,Trie
+from pythainlp.tokenize import sent_tokenize
 import re
 from fixthaipdf.dict import replace_list
 from fixthaipdf.more_dict import replace_list_after_clean
@@ -25,6 +26,9 @@ from fixthaipdf.more_dict import replace_list_after_clean
 replace_list+=[(i.replace("า","ำ"),i) for i in list(thai_words()) if "า" in i]
 replace_list+=[(i.replace("ำ","า"),i) for i in list(thai_words()) if "ำ" in i]
 replace_list+=[(i.replace("ำ","้ำ"),i) for i in list(thai_words()) if "ำ" in i]
+replace_list+=[(i.replace("ำ"," า"),i) for i in list(thai_words()) if "ำ" in i]
+replace_list+=[(re.sub(f"[{thai_above_vowels+thai_tonemarks}]","",i),i) for i  in list(thai_words())]
+replace_list+=[(re.sub(f"[{thai_tonemarks}]","$",i),i) for i  in list(thai_words())]
 
 d={i:j for i,j in replace_list}
 _list_d=set(d.keys())
