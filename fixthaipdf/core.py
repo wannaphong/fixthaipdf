@@ -26,7 +26,7 @@ from fixthaipdf.more_dict import replace_list_after_clean
 replace_list+=[(i.replace("า","ำ"),i) for i in list(thai_words()) if "า" in i]
 replace_list+=[(i.replace("ำ","า"),i) for i in list(thai_words()) if "ำ" in i]
 replace_list+=[(i.replace("ำ","้ำ"),i) for i in list(thai_words()) if "ำ" in i]
-replace_list+=[(i.replace("ำ","้า"),i) for i in list(thai_words()) if "ำ" in i]
+replace_list+=[(i.replace("ำ","้า"),i) for i in list(thai_words()) if "ำ" in i and len(i)>3]
 replace_list+=[(i.replace("ำ"," า"),i) for i in list(thai_words()) if "ำ" in i]
 replace_list+=[(re.sub(f"[{thai_above_vowels+thai_tonemarks}]","",i),i) for i  in list(thai_words())]
 replace_list+=[(re.sub(f"[{thai_tonemarks}]","$",i),i) for i  in list(thai_words())]
